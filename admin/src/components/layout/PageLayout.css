@@ -1,0 +1,26 @@
+.page-shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-page-bg);
+}
+
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .page-shell {
+    flex-direction: column;
+  }
+
+  .page-main {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,207 @@
+.lab-row-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.lab-action-button {
+  min-height: 42px;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border: 1px solid transparent;
+  background: var(--color-white);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.lab-action-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(24, 24, 24, 0.08);
+}
+
+.lab-action-view {
+  border-color: var(--color-info);
+  color: var(--color-info);
+}
+
+.lab-action-view:hover {
+  background: rgba(27, 162, 219, 0.08);
+}
+
+.lab-action-edit {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+}
+
+.lab-action-edit:hover {
+  background: rgba(255, 143, 60, 0.1);
+}
+
+.lab-action-delete {
+  background: var(--color-danger);
+  color: var(--color-white);
+  box-shadow: 0 8px 18px rgba(255, 0, 3, 0.14);
+}
+
+.lab-action-delete:hover {
+  background: #d90003;
+}
+
+.lab-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.lab-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.lab-detail-item {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-light-bg);
+  padding: 0.8rem 0.9rem;
+  min-width: 0;
+}
+
+.lab-detail-item span {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--color-text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lab-detail-item strong {
+  display: block;
+  color: var(--color-heading);
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.lab-systems-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lab-systems-section h4 {
+  margin: 0;
+  color: var(--color-heading);
+  font-size: 1rem;
+}
+
+.lab-systems-table {
+  max-height: 280px;
+  overflow: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+}
+
+.lab-systems-table .data-table {
+  border-radius: 0;
+}
+
+.lab-detail-empty {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-light-bg);
+  color: var(--color-text);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .lab-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-row-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lab-action-button {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------*/
+/* ============================================================
+   Occupancy chips + highlighted total — uses the EXISTING team
+   color system from src/assets/colors.css, not invented variables.
+   ============================================================ */
+
+/* highlights Total Systems Count so it stands out from the other
+   6 plain reference fields in the details grid */
+.lab-detail-item-highlight {
+  background: rgba(0, 135, 56, 0.06);       /* faint tint of --color-primary */
+  border: 1px solid var(--color-primary);
+}
+
+/* row of 3 small stat cards above the systems table */
+.occupancy-strip {
+  display: flex;
+  gap: 12px;
+  margin: 4px 0 4px;
+}
+
+.occupancy-chip {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 12px;               /* matches --color-border radius style used elsewhere */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid var(--color-border);
+}
+
+.occupancy-chip span {
+  font-size: 12px;
+  color: var(--color-text);          /* matches team's muted label color */
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.occupancy-chip strong {
+  font-size: 20px;
+  color: var(--color-heading);       /* matches team's heading color */
+}
+
+.occupancy-chip-total {
+  background: var(--color-light-bg);
+}
+
+.occupancy-chip-available {
+  background: rgba(62, 183, 94, 0.08);   /* tint of --color-success */
+  border-color: var(--color-success);
+}
+
+.occupancy-chip-occupied {
+  background: rgba(255, 143, 60, 0.08);  /* tint of --color-warning */
+  border-color: var(--color-warning);
+}
+/* NEW: keep system row actions compact and side-by-side, not wrapped/stacked */
+.lab-systems-table .lab-row-actions {
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.lab-systems-table .lab-action-button {
+  padding: 0.4rem 0.7rem;
+  min-height: 32px;
+  font-size: 0.8rem;
+}
