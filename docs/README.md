@@ -286,33 +286,9 @@ The system can:
 
 ## 📸 Application Screenshots
 
-The repository contains screenshots demonstrating the application's main workflows and interfaces.
 
-### Login
+[View all screenshots →](./screenshots/)
 
-![Login](screenshots/1.Login.png)
-
-### Dashboard
-
-![Dashboard](screenshots/2.Dashboard.png)
-
-### Lab Management
-
-![Lab Management](screenshots/4.CreateLab.png)
-
-### System Management
-
-![System Management](screenshots/5.system-management.png)
-
-### User management
-
-![Assignment Management](screenshots/9.Usermanagement.png)
-
-### Utilization Tracking
-
-![User management Tracking](screenshots/8.Utilization.png)
-
----
 
 ## 🔄 Core Application Workflow
 
