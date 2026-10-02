@@ -287,7 +287,7 @@ The system can:
 ## 📸 Application Screenshots
 
 
-[View all screenshots →](./screenshots/)
+[View all screenshots →](screenshots/)
 
 
 ## 🔄 Core Application Workflow
