@@ -284,10 +284,11 @@ The system can:
 
 ---
 
+
 ## 📸 Application Screenshots
 
+[View all screenshots](https://github.com/AneyShravani/Ai_lab_maintenance/tree/main/screenshots)
 
-[View all screenshots →](screenshots/)
 
 
 ## 🔄 Core Application Workflow
