@@ -290,27 +290,27 @@ The repository contains screenshots demonstrating the application's main workflo
 
 ### Login
 
-![Login](screenshots/login.png)
+![Login](screenshots/1.Login.png)
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/2.Dashboard.png)
 
 ### Lab Management
 
-![Lab Management](screenshots/lab-management.png)
+![Lab Management](screenshots/4.CreateLab.png)
 
 ### System Management
 
-![System Management](screenshots/system-management.png)
+![System Management](screenshots/5.system-management.png)
 
-### Assignment Management
+### User management
 
-![Assignment Management](screenshots/assignment.png)
+![Assignment Management](screenshots/9.Usermanagement.png)
 
 ### Utilization Tracking
 
-![Utilization Tracking](screenshots/utilization.png)
+![User management Tracking](screenshots/8.Utilization.png)
 
 ---
 
